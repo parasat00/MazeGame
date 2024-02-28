@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+ <link rel="stylesheet" href="./style.css">
+ <title>Maze Game</title>
+</head>
+<body>
+ <h1>Maze Game</h1>
+ <section id="canvas_container" class="canvas"></section>
+
+ <select name="difficulty" id="difficulty">
+  <option value="easy">Easy</option>
+  <option value="middle">Middle</option>
+  <option value="hard">Hard</option>
+ </select>
+ <button class="start">Start Game</button>
+
+ <section class="controls">
+  <div class="ctrl" data-dir="top">
+   <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </div>
+
+  <div class="next-line">
+   <div class="ctrl" data-dir="left">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+   </div>
+   <div class="ctrl" data-dir="bottom">
+    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+   </div>
+   <div class="ctrl" data-dir="right">
+    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+   </div>
+  </div>
+ </section>
+
+ <section class="modal">
+  <div class="window">
+   <h3>Congratulations!</h3>
+   <h4>You won</h4>
+   <p></p>
+   <button class="close">
+    <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+   </button>
+  </div>
+ </section>
+ <script src="./index.js"></script>
+</body>
+</html>
